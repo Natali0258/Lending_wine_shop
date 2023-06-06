@@ -1,0 +1,144 @@
+.set{
+   padding: 40px 0 40px;
+   background: url("../images/set/set.png") center/cover no-repeat;
+   &__top{
+      max-width: 550px;
+      background: #000000;
+      padding: 40px 69px;
+      text-align: center;
+   }
+   &__title{
+      @include text($liberation, normal, normal, 55px, 80px, #FFFFFF);
+      margin-bottom: 9px;
+   }
+   &__description{
+      @include text($roboto, normal, normal, 16px, 28px, #FFFFFF);
+      margin-bottom: 26px;
+      &_second{
+         margin-bottom: 17px;
+      }
+   }
+   &__btn{
+      width: 180px;
+      height: 52px;
+      background: #FFFFFF;
+      border: 1px solid #FFFFFF;
+      @include text($roboto, normal, normal, 12px, 14px, #000000);
+      letter-spacing: 1px;
+      text-transform: uppercase;
+   }
+   &__bottom{
+      max-width: 550px;
+      margin-top: 20px;
+      background: #000000;
+      padding-top: 28px;
+      padding-bottom: 32px;
+      text-align: center;
+   }
+   &__menu{
+      display: flex;
+      justify-content: center;
+      column-gap: 41px;
+   }
+   &__item{
+      @include text($roboto, normal, normal, 12px, 18px, #FFFFFF);
+      list-style-type: none;
+      &-link{
+         text-decoration: none;
+         color: #FFFFFF;
+         &:hover{
+         color: red;
+         text-decoration: underline;
+         cursor: pointer;
+         }
+      }
+   }
+}
+
+@media (max-width: 992px){
+   .set{
+      padding: 30px 0 30px;
+      &__top {
+         max-width: 535px;
+         padding: 35px 69px;
+      }
+      &__title{
+         font-size: 52px;
+         line-height: 78px;
+      }
+      &__description{
+         font-size: 15px;
+         line-height: 27px;
+      }
+      &__bottom {
+         max-width: 535px;
+      }
+   }
+}
+
+@media (max-width: 768px){
+   .set{
+      padding: 25px 0 25px;
+      &__top {
+         max-width: 425px;
+         padding: 30px 48px;
+      }
+      &__title{
+         font-size: 45px;
+         line-height: 50px;
+      }
+      &__description{
+         font-size: 13px;
+         line-height: 24px;
+         margin-bottom: 18px;
+      }
+      &__btn {
+         width: 160px;
+         height: 45px;
+         font-size: 11px;
+         line-height: 13px;
+      }
+      &__bottom {
+         max-width: 425px;
+         padding-top: 25px;
+         padding-bottom: 28px;
+      }
+      &__item{
+         font-size: 11px;
+         line-height: 17px;
+      }
+   }
+}
+
+@media (max-width: 375px){
+   .set{
+      padding: 25px 0 25px;
+      &__top {
+         max-width: 425px;
+         padding: 28px 48px;
+      }
+      &__title{
+         font-size: 38px;
+         line-height: 42px;
+      }
+      &__description{
+         font-size: 11px;
+         line-height: 20px;
+         margin-bottom: 10px;
+      }
+      &__btn {
+         width: 155px;
+         height: 39px;
+         font-size: 11px;
+         line-height: 13px;
+      }
+      &__bottom {
+         max-width: 425px;
+         padding-top: 23px;
+         padding-bottom: 24px;
+      }
+      &__menu {
+         column-gap: 36px;
+      }
+   }
+}

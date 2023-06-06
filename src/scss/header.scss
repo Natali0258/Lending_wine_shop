@@ -1,0 +1,41 @@
+@import "../fonds/LeMondeLivreNormalOsF/stylesheet.css";
+@import "../fonds/Roboto/stylesheet.css";
+@import "../fonds/LiberationSerif/stylesheet.css";
+
+
+.header{
+   position: absolute;
+   width: 100%;
+   padding: 25px 0 31px;
+   z-index: 5;
+   &__nav{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+   }
+   &__menu{
+      display: flex;
+      column-gap: 60px;
+   }
+   &__list{
+      @include text($roboto, normal, normal, 12px, 18px, #FFFFFF);
+      text-decoration: none;
+      list-style: none;
+      text-transform: uppercase;
+      &-link{
+         text-decoration: none;
+         color: #FFFFFF;
+      }
+      &-link:hover{
+         color: red;
+         text-decoration: underline;
+      }
+   }
+   &__title{
+      @include text($lemondelivre, normal, normal, 40px, 40px, #FFFFFF);
+      // font-size: 40px;
+      // color: #FFFFFF;
+      // font-family: "LeMondeLivre";
+   }
+}

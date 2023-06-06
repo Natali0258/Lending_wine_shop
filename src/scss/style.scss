@@ -1,0 +1,35 @@
+@import "../fonds/Roboto/stylesheet.css";
+@import "../fonds/LeMondeLivreNormalOsF/stylesheet.css";
+@import "../fonds/Nomah/stylesheet.css";
+@import "../fonds/LiberationSerif/stylesheet.css";
+@import "enhancer.scss";
+
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+.container{
+   max-width: 1320px;
+   width: 100%;
+   margin: 0 auto;
+   padding: 0 15px;
+}
+.top{
+   @include text($roboto, normal, normal, 14px, 18px, #FFFFFF);
+   background: #191919;
+   text-align: center;
+   padding: 16px 0;
+}
+
+@import "header";
+@import "first-screen";
+@import "info";
+@import "ingredients";
+@import "intro";
+@import "drink";
+@import "review";
+@import "flavors";
+@import "set";
+@import "footer";
+@import "burger"

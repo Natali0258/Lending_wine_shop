@@ -1,0 +1,130 @@
+.first-screen{
+   padding: 312px 0 100px;
+   background: #996860;
+   position: relative;
+   &::before{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 50%;
+      height: 100%;
+      background: url("../images/first-screen/first-screen1.png") center/cover no-repeat;
+   }
+   &__box{
+      display: flex;
+      justify-content: end;
+   }
+   &__title{
+      @include text($liberation, normal, normal, 73px, 96px, #FFFFFF);
+      margin-bottom: 34px;
+      &_active{
+         color: red;
+      }
+   }
+   &__subtitle{
+      @include text($roboto, normal, normal, 18px, 32px, #FFFFFF);
+      margin-bottom: 46px;
+   }
+   &__btn{
+      width: 180px;
+      height: 52px;
+      @include text($roboto, normal, normal, 18px, 32px, #000000);
+      background: transparent;
+      border: 1px solid #FFFFFF;
+      cursor: pointer;
+   }
+}
+
+@media (max-width: 1200px){
+   .first-screen__content{
+      padding-right: 0;
+   }
+}
+
+@media (max-width: 1024px){
+   .first-screen {
+      &__content{
+         margin-right: 30px;
+      }
+      &__title{
+         font-size: 56px;
+         line-height: 66px;
+         margin-bottom: 30px;
+      }
+      &__subtitle{
+         font-size: 13px;
+         line-height: 25px;
+         margin-bottom: 40px;
+      }
+   }
+}
+
+@media (max-width: 992px){
+   .first-screen {
+      &__content{
+         margin-right: 10px;
+      }
+   }
+}
+
+   @media (max-width: 768px){
+      .first-screen {
+         padding: 225px 0 80px;
+         position: relative;
+         &::before{
+            width: 100%;
+         }
+         &::after{
+            content:'';
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #00000050;
+            position: absolute;
+            z-index: 3;
+         }
+         &__box{
+            justify-content: center;
+         }
+         &__content{
+            position: relative;
+            z-index: 5;
+            text-align: center;
+         }
+         &__title{
+            font-size: 65px;
+            line-height: 70px;
+            margin-bottom: 20px;
+         }
+         &__btn{
+            @include text($roboto, normal, bold, 18px, 32px, #000000);
+         }
+      }
+   }
+
+   @media (max-width: 576px){
+      .first-screen {
+         padding: 175px 0 60px;
+         &__title{
+            font-size: 55px;
+            line-height: 50px;
+            margin-bottom: 15px;
+         }
+         &__subtitle{
+            font-size: 15px;
+            line-height: 25px;
+            margin-bottom: 30px;
+         }
+      }
+   }
+
+   @media (max-width: 376px){
+      .first-screen {
+         padding: 130px 0 40px;
+         &__title{
+            font-size: 45px;
+         }
+      }
+   }

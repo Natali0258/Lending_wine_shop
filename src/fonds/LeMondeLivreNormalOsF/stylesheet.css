@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'LeMondeLivre';
+    src: url('LeMondeLivre-NormalOsF.eot');
+    src: local('LeMondeLivre-NormalOsF'),
+        url('LeMondeLivre-NormalOsF.eot?#iefix') format('embedded-opentype'),
+        url('LeMondeLivre-NormalOsF.woff2') format('woff2'),
+        url('LeMondeLivre-NormalOsF.woff') format('woff'),
+        url('LeMondeLivre-NormalOsF.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

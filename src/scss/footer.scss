@@ -1,0 +1,208 @@
+.footer{
+   padding: 45px 0 55px;
+   background-color: #000000;
+   &__content{
+      display: flex;
+      justify-content: space-between;
+      &-title{
+         @include text($liberation, normal, normal, 42px, 72px, #FFFFFF);
+         margin-bottom: 12px;
+      }
+      &-description{
+         @include text($roboto, normal, normal, 18px, 27px, #FFFFFF);
+         margin-bottom: 14px;
+      }
+      &-form{
+         display: flex;
+         justify-content: space-between;
+         border-bottom: 1px solid #8A8A8A;
+         padding: 18px 0 21px;
+      }
+      &-email{
+         @include text($roboto, normal, normal, 9px, 14px, #818181);
+         letter-spacing: 0.12px;
+         text-transform: uppercase;
+         border: none;
+         outline: none;
+         background: transparent;
+      }
+      &-btn{
+         @include text($roboto, normal, normal, 12px, 14px, #FFFFFF);
+         letter-spacing: 0.12px;
+         text-transform: uppercase;
+         background: transparent;
+         border: 1px solid transparent;
+         cursor: pointer;
+      }
+   }
+   &__menus{
+      display: flex;
+      column-gap: 250px;
+      margin-right: 100px;
+   }
+   &__menu{
+      @include text($roboto, normal, normal, 18px, 27px, #8A8A8A);
+      & li{
+         list-style: none;
+         padding-bottom: 10px;
+      }
+      & li a{
+         text-decoration: none;
+         color:#8A8A8A;
+         cursor: pointer;
+      }
+      & li:first-child{
+         padding-bottom: 30px;
+      }
+      & li:first-child>a{
+         color: #FFFFFF;
+      }
+   }
+}
+
+@media (max-width: 1200px) {
+   .footer{
+      &__menus{
+         column-gap: 120px;
+         margin-right: 90px;
+      }
+   }
+}
+
+@media (max-width: 1024px) {
+   .footer{
+      &__content{
+         &-title{
+            font-size: 34px;
+            line-height: 65px;
+         }
+         &-description{
+            font-size: 16px;
+            line-height: 26px;
+         }
+      }
+      &__menus{
+         column-gap: 150px;
+         margin-right: 80px;
+      }
+      &__menu{
+         font-size: 16px;
+         line-height: 26px;
+      }
+   }
+}
+
+@media (max-width: 992px) {
+   .footer{
+      padding: 40px 0 45px;
+      &__menus{
+         column-gap: 100px;
+         margin-right: 60px;
+      }
+      &__menu{
+         font-size: 16px;
+         line-height: 26px;
+   }
+   }
+}
+
+@media (max-width: 768px) {
+   .footer{
+      padding: 30px 0 35px;
+      &__content{
+         &-title{
+            font-size: 30px;
+            line-height: 55px;
+         }
+         &-description{
+            font-size: 13px;
+            line-height: 22px;
+         }
+         &-btn{
+            font-size: 11px;
+            line-height: 14px;
+         }
+         &-form {
+            padding: 13px 0 15px;
+         }
+      }
+      &__menus{
+         column-gap: 70px;
+         margin-right: 40px;
+         margin-left: 10px;
+      }
+      &__menu{
+         font-size: 13px;
+         line-height: 22px;
+         & li{
+            padding-bottom: 7px;
+         }
+         & li:first-child{
+            padding-bottom: 20px;
+         }
+      }
+   }
+}
+
+@media (max-width: 425px) {
+   .footer{
+      padding: 20px 0 20px;
+      &__content{
+         flex-direction: column;
+         text-align: center;
+         &-title{
+            font-size: 24px;
+            line-height: 45px;
+            margin-bottom: 5px;
+         }
+         &-description{
+            font-size: 12px;
+            line-height: 20px;
+            margin-bottom: 10px;
+         }
+         &-btn{
+            font-size: 10px;
+            line-height: 12px;
+         }
+         &-form {
+            padding: 12px 0 13px;
+         }
+      }
+      &__menus{
+         justify-content: space-around;
+         margin-top: 20px;
+         column-gap: 0;
+         margin-right: 0;
+      }
+      &__menu{
+         font-size: 12px;
+         line-height: 20px;
+         & li{
+            padding-bottom: 5px;
+         }
+         & li:first-child{
+            padding-bottom: 10px;
+         }
+      }
+   }
+}
+
+@media (max-width: 375px) {
+   .footer{
+      padding: 18px 0 18px;
+      &__content{
+         &-title{
+            font-size: 20px;
+            line-height: 35px;
+         }
+         &-description{
+            font-size: 11px;
+            line-height: 16px;
+         }
+      }
+      &__menu{
+         font-size: 11px;
+         line-height: 16px;
+      }
+   }
+}

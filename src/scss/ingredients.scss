@@ -1,0 +1,205 @@
+.ingredients{
+   padding-top: 80px;
+   &__title{
+      @include text($liberation, normal, normal, 64px, 80px, #000000);
+      text-align: center;
+      margin-bottom: 24px;
+   }
+   &__subtitle{
+      @include text($roboto, normal, normal, 12px, 18px, #000000);
+      letter-spacing: 1px;
+      text-align: center;
+      text-transform: uppercase;
+      margin-bottom: 82px;
+   }
+   &__row{
+      display: flex;
+      column-gap: 55px;
+      padding-bottom: 110px;
+      border-bottom: 2px solid rgb(170, 170, 170);
+   }
+   &__col{
+      text-align: center;
+      width: 33.3%;
+      &_best{
+         position: relative;
+         &::before{
+            content: 'best seller';
+            @include text($roboto, normal, normal, 12px, 14px, #FFFFFF);
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            box-sizing: border-box;
+
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: #996860;
+            position: absolute;
+            top: 0;
+            right: 0;
+         }
+      }
+      &-img{
+         width: 100%;
+         margin-bottom: 19px;
+         &-best{
+            border-top-left-radius: 50%;
+            border-top-right-radius: 50%;
+         }
+      }
+      &-title{
+         @include text($liberation, normal, normal, 30px, 44px, #000000);
+         margin-bottom: 16px;
+      }
+      &-description{
+         @include text($roboto, normal, normal, 16px, 28px, #000000);
+         margin-bottom: 27px;
+      }
+      &-btn{
+         width: 180px;
+         height: 52px;
+         background: #191919;
+         border: 1px solid #191919;
+         @include text($roboto, normal, normal, 12px, 14px, #FFFFFF);
+         letter-spacing: 1px;
+         text-transform: uppercase;
+      }
+   }
+}
+
+@media (max-width: 1200px){
+   .ingredients{
+      padding-top: 70px;
+      &__row{
+         padding-bottom: 70px;
+      }
+      &__col-description {
+         font-size: 15px;
+         line-height: 25px;
+      }
+   }
+}
+
+@media (max-width: 1024px){
+   .ingredients{
+      &__title{
+         font-size: 55px;
+         line-height: 60px;
+      }
+      &__subtitle{
+         margin-bottom: 55px;
+      }
+      &__col-description {
+         font-size: 16px;
+         line-height: 25px;
+      }
+   }
+}
+
+@media (max-width: 768px){
+   .ingredients{
+      padding-top: 45px;
+      margin-bottom: 0;
+      &__row{
+         column-gap: 10px;
+         padding-bottom: 50px;
+      }
+      &__title{
+         font-size: 45px;
+         line-height: 50px;
+      }
+      &__subtitle{
+         margin-bottom: 40px;
+      }
+      &__col{
+         &_best::before {
+            font-size: 10px;
+            width: 70px;
+            height: 70px;
+         }
+         &-title{
+            font-size: 23px;
+            margin-bottom: 10px;
+         }
+         &-description{
+            font-size: 13px;
+            line-height: 25px;
+            margin-bottom: 16px;
+         }
+         &-btn{
+            width: 170px;
+         }
+      }
+   }
+}
+
+@media (max-width: 576px) {
+   .ingredients{
+      &__title{
+         font-size: 37px;
+         line-height: 40px;
+      }
+      &__row{
+         flex-wrap: wrap;
+      }
+      &__col{
+         width: 100%;
+         display: flex;
+         column-gap: 10px;
+         &_best::before {
+            left: 50%;
+            transform: translate(-100%);
+         }
+         &-img{   
+            width: 50%;
+         }
+      }
+   }
+}
+
+@media (max-width: 425px){
+   .ingredients{
+      padding-top: 35px;
+      &__title{
+         font-size: 30px;
+         line-height: 35px;
+      }
+      &__subtitle {
+         margin-bottom: 20px;
+      }
+      &__col{
+         &-btn{
+            width: 140px;
+            height: 40px;
+         }
+      }
+   }
+}
+
+@media (max-width: 375px){
+   .ingredients{
+      padding-top: 30px;
+      &__title{
+         font-size: 26px;
+         line-height: 30px;
+         margin-bottom: 15px;
+      }
+      &__row{
+         padding-bottom: 25px;
+      }
+      &__col{
+         &-title{
+            font-size: 20px;
+         }
+         &-description{
+            font-size: 12px;
+            line-height: 20px;
+            margin-bottom: 16px;
+         }
+      }
+   }
+}

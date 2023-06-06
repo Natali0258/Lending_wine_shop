@@ -1,0 +1,51 @@
+@font-face {
+   font-family: 'LiberationSerif';
+   src: url('LiberationSerif-Bold.ttf') format('truetype');
+   /* src: url('LiberationSerif-Bold.ttf');
+   src: local('LiberationSerif-Bold'),
+      url('LiberationSerif-Bold.eot?#iefix') format('embedded-opentype'),
+      url('LiberationSerif-Bold.woff2') format('woff2'),
+      url('LiberationSerif-Bold.woff') format('woff'),
+      url('LiberationSerif-Bold.ttf') format('truetype');*/
+      font-weight: bold;
+      font-style: normal;
+}
+
+@font-face {
+   font-family: 'LiberationSerif';
+   src: url('LiberationSerif-Regular.ttf') format('truetype');
+   /* src: url('LiberationSerif-Regular.ttf');
+   src: local('LiberationSerif-Regular'),
+      url('LiberationSerif-Regular.eot?#iefix') format('embedded-opentype'),
+      url('LiberationSerif-Regular.woff2') format('woff2'),
+      url('LiberationSerif-Regular.woff') format('woff'), 
+      url('LiberationSerif-Regular.ttf') format('truetype');*/
+   font-weight: normal;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'LiberationSerif';
+   src: url('LiberationSerif-BoldItalic.ttf') format('truetype');
+   /* src: url('LiberationSerif-BoldItalic.ttf');
+   src: local('LiberationSerif-BoldItalic'),
+      url('LiberationSerif-BoldItalic.eot?#iefix') format('embedded-opentype'),
+      url('LiberationSerif-BoldItalic.woff2') format('woff2'),
+      url('LiberationSerif-BoldItalic.woff') format('woff'),
+      url('LiberationSerif-BoldItalic.ttf') format('truetype'); */
+   font-weight: bold;
+   font-style: italic;
+}
+
+@font-face {
+   font-family: 'LiberationSerif';
+   src: url('LiberationSerif-Italic.ttf') format('truetype');
+   /* src: url('LiberationSerif-Italic.ttf');
+   src: local('LiberationSerif-Italic'),
+      url('LiberationSerif-Italic.eot?#iefix') format('embedded-opentype'),
+      url('LiberationSerif-Italic.woff2') format('woff2'),
+      url('LiberationSerif-Italic.woff') format('woff'),
+      url('LiberationSerif-Italic.ttf') format('truetype'); */
+   font-weight: normal;
+   font-style: italic;
+}

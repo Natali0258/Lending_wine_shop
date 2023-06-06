@@ -1,0 +1,104 @@
+.info{
+   padding-top: 59px;
+   &__box{
+      display: flex;
+      column-gap: 180px;
+      border-bottom: 2px solid rgb(170, 170, 170);
+      padding-bottom: 41px;
+   }
+   &__item{
+      width: 33.3%;
+      text-align: center;
+      &-text{
+         @include text($roboto, normal, normal, 18px, 32px, #000000);
+         text-align: center;
+         margin-bottom: 36px;
+      }
+      &-first{
+         @include text($liberation, normal, 600, 26px, 32px, #000000);
+         text-transform: uppercase;
+      }
+      &-second{
+         @include text($nomah, normal, bold, 26px, 32px, #000000);
+         font-style: normal;
+      }
+      &-third{
+         @include text($roboto, normal, bold, 28px, 32px, #000000);
+      }
+   }
+}
+
+@media (max-width: 1200px){
+   .info__box{
+      column-gap: 110px;
+   }
+}
+
+@media (max-width: 1024px){
+   .info__box{
+      column-gap: 47px;
+   }
+}
+
+@media (max-width: 992px){
+   .info__box{
+      column-gap: 30px;
+   }
+   .info__item-text{
+      font-size: 15px;
+      line-height: 25px;
+      margin-bottom: 25px;
+   }
+}
+
+@media (max-width: 768px){
+   .info{
+      padding-top: 40px;
+      &__box{
+      flex-wrap: wrap;
+      justify-content: center;
+      row-gap: 30px;
+      padding-bottom: 30px;
+      }
+      &__item{
+         width: calc(50% - 15px);
+         text-align: center;
+         &:nth-child(2){
+            order: 3;
+         }
+      }
+   }
+}
+
+@media (max-width: 426px){
+   .info{
+      padding-top: 30px;
+      &__box{
+         padding-bottom: 20px;
+      }
+      &__item-text{
+         font-size: 13px;
+         line-height: 20px;
+      }
+   }
+}
+
+@media (max-width: 376px){
+   .info{
+      &__box{
+         column-gap: 20px;
+         row-gap: 20px;
+      }
+      &__item{
+         &-first{
+            @include text($liberation, normal, 600, 22px, 28px, #000000);
+         }
+         &-second{
+            @include text($nomah, normal, bold, 22px, 28px, #000000);
+         }
+         &-third{
+            @include text($roboto, normal, bold, 24px, 28px, #000000);
+         }
+      }
+   }
+}

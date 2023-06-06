@@ -1,0 +1,13 @@
+$roboto: Roboto, sans-serif;
+$liberation: "LiberationSerif", serif;
+$nomah: 'Nomah Script', sans-serif;
+$lemondelivre: 'LeMondeLivre', sans-serif;
+
+@mixin text($ff, $fs, $fw, $fz, $lh, $cr){
+   font-family: $ff;
+   font-style: $fs;
+   font-weight: $fw;
+   font-size: $fz;
+   line-height: $lh;
+   color: $cr;
+}
