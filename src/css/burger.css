@@ -1,23 +1,17 @@
-.burger {
-  width: 40px;
-  height: 40px;
-  border: 3px solid grey;
-  display: none;
-}
+/* Error: Undefined mixin.
+ *    ,
+ * 83 |       @include text($lemondelivre, normal, normal, 40px, 40px, #FFFFFF);
+ *    |       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ *    '
+ *   src\scss\burger.scss 83:7  root stylesheet */
 
-@media (max-width: 768px) {
-  .burger {
-    display: block;
-    position: fixed;
-    top: 50px;
-    right: 20px;
-  }
-  .header__menu {
-    display: none;
-  }
-  .header__nav {
-    justify-content: center;
-  }
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined mixin.\a    \2577 \a 83 \2502        @include text($lemondelivre, normal, normal, 40px, 40px, #FFFFFF);\d\a    \2502        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\a    \2575 \a   src\\scss\\burger.scss 83:7  root stylesheet";
 }
-
-/*# sourceMappingURL=burger.css.map */
