@@ -3,7 +3,7 @@
  * 4 |       @include text($liberation, normal, normal, 64px, 80px, #000000);
  *   |       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
  *   '
- *   Maksat\11.Project\src\scss\ingredients.scss 4:7  root stylesheet */
+ *   src\scss\ingredients.scss 4:7  root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -13,5 +13,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Undefined mixin.\a   \2577 \a 4 \2502        @include text($liberation, normal, normal, 64px, 80px, #000000);\d\a   \2502        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   Maksat\\11.Project\\src\\scss\\ingredients.scss 4:7  root stylesheet";
+  content: "Error: Undefined mixin.\a   \2577 \a 4 \2502        @include text($liberation, normal, normal, 64px, 80px, #000000);\d\a   \2502        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   src\\scss\\ingredients.scss 4:7  root stylesheet";
 }
