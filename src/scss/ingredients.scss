@@ -1,14 +1,17 @@
+@import "./enhancer.scss";
+
 .ingredients{
    padding-top: 80px;
+   text-align: center;
    &__title{
       @include text($liberation, normal, normal, 64px, 80px, #000000);
-      text-align: center;
+      //text-align: center;
       margin-bottom: 24px;
    }
    &__subtitle{
       @include text($roboto, normal, normal, 12px, 18px, #000000);
       letter-spacing: 1px;
-      text-align: center;
+      //text-align: center;
       text-transform: uppercase;
       margin-bottom: 82px;
    }

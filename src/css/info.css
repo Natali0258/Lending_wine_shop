@@ -1,17 +1,132 @@
-/* Error: Undefined mixin.
- *    ,
- * 13 |          @include text($roboto, normal, normal, 18px, 32px, #000000);
- *    |          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
- *    '
- *   Maksat\11.Project\src\scss\info.scss 13:10  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined mixin.\a    \2577 \a 13 \2502           @include text($roboto, normal, normal, 18px, 32px, #000000);\d\a    \2502           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\a    \2575 \a   Maksat\\11.Project\\src\\scss\\info.scss 13:10  root stylesheet";
+.info {
+  padding-top: 59px;
 }
+.info__box {
+  display: flex;
+  column-gap: 180px;
+  border-bottom: 2px solid rgb(170, 170, 170);
+  padding-bottom: 41px;
+}
+.info__item {
+  width: 33.3%;
+  text-align: center;
+}
+.info__item-text {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 32px;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 36px;
+}
+.info__item-first {
+  font-family: "LiberationSerif", serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 32px;
+  color: #000000;
+  text-transform: uppercase;
+}
+.info__item-second {
+  font-family: "Nomah Script", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 32px;
+  color: #000000;
+  font-style: normal;
+}
+.info__item-third {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 32px;
+  color: #000000;
+}
+
+@media (max-width: 1200px) {
+  .info__box {
+    column-gap: 110px;
+  }
+}
+@media (max-width: 1024px) {
+  .info__box {
+    column-gap: 47px;
+  }
+}
+@media (max-width: 992px) {
+  .info__box {
+    column-gap: 30px;
+  }
+  .info__item-text {
+    font-size: 15px;
+    line-height: 25px;
+    margin-bottom: 25px;
+  }
+}
+@media (max-width: 768px) {
+  .info {
+    padding-top: 40px;
+  }
+  .info__box {
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 30px;
+    padding-bottom: 30px;
+  }
+  .info__item {
+    width: calc(50% - 15px);
+    text-align: center;
+  }
+  .info__item:nth-child(2) {
+    order: 3;
+  }
+}
+@media (max-width: 426px) {
+  .info {
+    padding-top: 30px;
+  }
+  .info__box {
+    padding-bottom: 20px;
+  }
+  .info__item-text {
+    font-size: 13px;
+    line-height: 20px;
+  }
+}
+@media (max-width: 376px) {
+  .info__box {
+    column-gap: 20px;
+    row-gap: 20px;
+  }
+  .info__item-first {
+    font-family: "LiberationSerif", serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 28px;
+    color: #000000;
+  }
+  .info__item-second {
+    font-family: "Nomah Script", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 28px;
+    color: #000000;
+  }
+  .info__item-third {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+  }
+}
+
+/*# sourceMappingURL=info.css.map */

@@ -1,17 +1,117 @@
-/* Error: Undefined mixin.
- *    ,
- * 12 |       @include text($roboto, normal, normal, 18px, 32px, #FFFFFF);
- *    |       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
- *    '
- *   Maksat\11.Project\src\scss\review.scss 12:7  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined mixin.\a    \2577 \a 12 \2502        @include text($roboto, normal, normal, 18px, 32px, #FFFFFF);\d\a    \2502        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\a    \2575 \a   Maksat\\11.Project\\src\\scss\\review.scss 12:7  root stylesheet";
+.review {
+  padding: 95px 0 50px;
+  background-color: #000000;
 }
+.review__row {
+  display: flex;
+  justify-content: space-between;
+}
+.review__col {
+  text-align: center;
+}
+.review__description {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 32px;
+  color: #FFFFFF;
+  margin-bottom: 17px;
+}
+.review__title {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: #FFFFFF;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+.review__subtitle {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #8A8A8A;
+  text-transform: capitalize;
+}
+
+@media (max-width: 1200px) {
+  .review {
+    padding: 67px 0 50px;
+  }
+}
+@media (max-width: 992px) {
+  .review__description {
+    font-size: 16px;
+    line-height: 30px;
+  }
+  .review__title {
+    font-size: 12px;
+    line-height: 28px;
+  }
+  .review__subtitle {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+@media (max-width: 768px) {
+  .review__description {
+    font-size: 14px;
+    line-height: 26px;
+  }
+  .review__title {
+    font-size: 12px;
+    line-height: 28px;
+  }
+  .review__subtitle {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+@media (max-width: 425px) {
+  .review {
+    padding: 43px 0 32px;
+  }
+  .review__description {
+    font-size: 12px;
+    line-height: 24px;
+  }
+  .review__title {
+    font-size: 11px;
+    line-height: 26px;
+  }
+  .review__subtitle {
+    font-size: 12px;
+    line-height: 20px;
+  }
+}
+@media (max-width: 375px) {
+  .review {
+    padding: 34px 0 12px;
+  }
+  .review__row {
+    flex-direction: column;
+  }
+  .review__col {
+    margin-bottom: 24px;
+  }
+  .review__description {
+    font-size: 12px;
+    line-height: 22px;
+    margin-bottom: 10px;
+  }
+  .review__title {
+    font-size: 11px;
+    line-height: 26px;
+    margin-bottom: 0;
+  }
+  .review__subtitle {
+    font-size: 12px;
+    line-height: 20px;
+  }
+}
+
+/*# sourceMappingURL=review.css.map */

@@ -2,9 +2,6 @@
 @import "../fonds/LeMondeLivreNormalOsF/stylesheet.css";
 @import "../fonds/Nomah/stylesheet.css";
 @import "../fonds/LiberationSerif/stylesheet.css";
-@import "../fonds/LeMondeLivreNormalOsF/stylesheet.css";
-@import "../fonds/Roboto/stylesheet.css";
-@import "../fonds/LiberationSerif/stylesheet.css";
 * {
   padding: 0;
   margin: 0;
@@ -344,6 +341,7 @@
 }
 .ingredients {
   padding-top: 80px;
+  text-align: center;
 }
 .ingredients__title {
   font-family: "LiberationSerif", serif;
@@ -352,7 +350,6 @@
   font-size: 64px;
   line-height: 80px;
   color: #000000;
-  text-align: center;
   margin-bottom: 24px;
 }
 .ingredients__subtitle {
@@ -363,7 +360,6 @@
   line-height: 18px;
   color: #000000;
   letter-spacing: 1px;
-  text-align: center;
   text-transform: uppercase;
   margin-bottom: 82px;
 }
