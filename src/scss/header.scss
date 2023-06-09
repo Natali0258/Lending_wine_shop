@@ -1,18 +1,14 @@
-@import "../fonds/LeMondeLivreNormalOsF/stylesheet.css";
-@import "../fonds/Roboto/stylesheet.css";
-@import "../fonds/LiberationSerif/stylesheet.css";
-
+@import "./enhancer.scss";
 
 .header{
    position: absolute;
    width: 100%;
-   padding: 25px 0 31px;
+   padding: 75px 0 31px;
    z-index: 5;
    &__nav{
       display: flex;
       justify-content: space-between;
       align-items: center;
-
    }
    &__menu{
       display: flex;
@@ -34,5 +30,8 @@
    }
    &__title{
       @include text($lemondelivre, normal, normal, 40px, 40px, #FFFFFF);
+      // font-size: 40px;
+      // color: #FFFFFF;
+      // font-family: "LeMondeLivre";
    }
 }

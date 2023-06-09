@@ -1,3 +1,5 @@
+@import "./enhancer.scss";
+
 .footer{
    padding: 45px 0 55px;
    background-color: #000000;
@@ -50,6 +52,10 @@
          text-decoration: none;
          color:#8A8A8A;
          cursor: pointer;
+         &:hover{
+            color:red;
+            text-decoration: underline;
+         }
       }
       & li:first-child{
          padding-bottom: 30px;

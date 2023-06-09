@@ -16,18 +16,24 @@
       <div class="container">
          <nav class="header__nav">
             <ul class="header__menu">
-               <li class="header__list"><a class="header__list-link" href="">shop</a></li>
-               <li class="header__list"><a class="header__list-link" href="">membership</a></li>
-               <li class="header__list"><a class="header__list-link" href="">our story</a></li>
+               <li class="header__list"><a class="header__list-link" href="#shop">shop</a></li>
+               <li class="header__list"><a class="header__list-link" href="#membership">membership</a></li>
+               <li class="header__list"><a class="header__list-link" href="#story">our story</a></li>
             </ul>
             <h1 class="header__title" id="home">Haus</h1>
             <ul class="header__menu">
-               <li class="header__list"><a class="header__list-link" href="">Newsletter</a></li>
-               <li class="header__list"><a class="header__list-link" href="">Account</a></li>
-               <li class="header__list"><a class="header__list-link" href="">Cart ( 0 )</a></li>
+               <li class="header__list"><a class="header__list-link" href="#">Newsletter</a></li>
+               <li class="header__list"><a class="header__list-link" href="#">Account</a></li>
+               <li class="header__list"><a class="header__list-link" href="#">Cart ( 0 )</a></li>
             </ul>
-            <div class="burger">
          </nav>
+
+         <div class="burger">
+            <div class="burger__line"></div>
+         </div>
+         <h1 class="header__title_dublicate">
+            Haus
+         </h1>
       </div>
       </div>
    </header>
@@ -83,7 +89,7 @@
                         kit.
                         Each bottle serves 2-3 drinks.
                      </p>
-                     <button class="ingredients__col-btn" type="" button>Shop Now</button>
+                     <button class="ingredients__col-btn" type="button">Shop Now</button>
                   </div>
                </div>
 
@@ -97,7 +103,7 @@
                         with a cubtle kick of fresh
                         jalapeno.
                      </p>
-                     <button class="ingredients__col-btn" type="" button>Shop Now</button>
+                     <button class="ingredients__col-btn" type="button">Shop Now</button>
                   </div>
                </div>
 
@@ -110,7 +116,7 @@
                         lemon
                         and subtle elderflower.
                      </p>
-                     <button class="ingredients__col-btn" type="" button>Shop Now</button>
+                     <button class="ingredients__col-btn" type="button">Shop Now</button>
                   </div>
                </div>
 
@@ -154,12 +160,12 @@
                         doorstep.</p>
                   </div>
                </div>
-               <img class="drink__img" src="./src/images/drink/drink1.png" alt="drink">
+               <img class="drink__img" src="./src/images/drink/drink.png" alt="drink">
             </div>
          </div>
       </section>
 
-      <section class="review">
+      <section class="review" id="membership">
          <div class="container">
             <div class="review__row">
                <div class="review__col">
@@ -189,7 +195,7 @@
          </div>
       </section>
 
-      <section class="flavors">
+      <section class="flavors" id="story">
          <div class="container">
             <div class="flavors__row">
                <img class="flavors__img" src="./src/images/flavors/flavors.png" alt="flavors">
@@ -236,7 +242,7 @@
                <p class="footer__content-description">Let's be friends. Subscrite to our newsletter to <br> receive
                   updates
                   on new launches, recipes, playlistes, <br> and more.</p>
-               <form class="footer__content-form" action="">
+               <form class="footer__content-form">
                   <label>
                      <input class="footer__content-email" type="email" placeholder="YOUR EMAIL ADDRESS">
                   </label>
