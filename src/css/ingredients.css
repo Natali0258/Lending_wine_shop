@@ -1,0 +1,225 @@
+.ingredients {
+  padding-top: 80px;
+  text-align: center;
+}
+.ingredients__title {
+  font-family: "LiberationSerif", serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 64px;
+  line-height: 80px;
+  color: #000000;
+  margin-bottom: 24px;
+}
+.ingredients__subtitle {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  color: #000000;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 82px;
+}
+.ingredients__row {
+  display: flex;
+  column-gap: 55px;
+  padding-bottom: 110px;
+  border-bottom: 2px solid rgb(170, 170, 170);
+}
+.ingredients__col {
+  text-align: center;
+  width: 33.3%;
+}
+.ingredients__col_best {
+  position: relative;
+}
+.ingredients__col_best::before {
+  content: "best seller";
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  color: #FFFFFF;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  box-sizing: border-box;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #996860;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.ingredients__col-img {
+  width: 100%;
+  margin-bottom: 19px;
+}
+.ingredients__col-img-best {
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+}
+.ingredients__col-title {
+  font-family: "LiberationSerif", serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 44px;
+  color: #000000;
+  margin-bottom: 16px;
+}
+.ingredients__col-description {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  color: #000000;
+  margin-bottom: 27px;
+}
+.ingredients__col-btn {
+  width: 180px;
+  height: 52px;
+  background: #191919;
+  border: 1px solid #191919;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  color: #FFFFFF;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.ingredients__col-btn:hover {
+  background-color: #8A8A8A;
+  border: 1px solid #8A8A8A;
+  cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+  .ingredients {
+    padding-top: 70px;
+  }
+  .ingredients__row {
+    padding-bottom: 70px;
+  }
+  .ingredients__col-description {
+    font-size: 15px;
+    line-height: 25px;
+  }
+}
+@media (max-width: 1024px) {
+  .ingredients__title {
+    font-size: 55px;
+    line-height: 60px;
+  }
+  .ingredients__subtitle {
+    margin-bottom: 55px;
+  }
+  .ingredients__col-description {
+    font-size: 16px;
+    line-height: 25px;
+  }
+}
+@media (max-width: 768px) {
+  .ingredients {
+    padding-top: 45px;
+    margin-bottom: 0;
+  }
+  .ingredients__row {
+    column-gap: 10px;
+    padding-bottom: 50px;
+  }
+  .ingredients__title {
+    font-size: 45px;
+    line-height: 50px;
+  }
+  .ingredients__subtitle {
+    margin-bottom: 40px;
+  }
+  .ingredients__col_best::before {
+    font-size: 10px;
+    width: 70px;
+    height: 70px;
+  }
+  .ingredients__col-title {
+    font-size: 23px;
+    margin-bottom: 10px;
+  }
+  .ingredients__col-description {
+    font-size: 13px;
+    line-height: 25px;
+    margin-bottom: 16px;
+  }
+  .ingredients__col-btn {
+    width: 170px;
+  }
+}
+@media (max-width: 576px) {
+  .ingredients__title {
+    font-size: 37px;
+    line-height: 40px;
+  }
+  .ingredients__row {
+    flex-wrap: wrap;
+  }
+  .ingredients__col {
+    width: 100%;
+    display: flex;
+    column-gap: 10px;
+  }
+  .ingredients__col_best::before {
+    left: 50%;
+    transform: translate(-100%);
+  }
+  .ingredients__col-img {
+    width: 50%;
+  }
+}
+@media (max-width: 425px) {
+  .ingredients {
+    padding-top: 35px;
+  }
+  .ingredients__title {
+    font-size: 30px;
+    line-height: 35px;
+  }
+  .ingredients__subtitle {
+    margin-bottom: 20px;
+  }
+  .ingredients__col-btn {
+    width: 140px;
+    height: 40px;
+  }
+}
+@media (max-width: 375px) {
+  .ingredients {
+    padding-top: 30px;
+  }
+  .ingredients__title {
+    font-size: 26px;
+    line-height: 30px;
+    margin-bottom: 15px;
+  }
+  .ingredients__row {
+    padding-bottom: 25px;
+  }
+  .ingredients__col-title {
+    font-size: 20px;
+  }
+  .ingredients__col-description {
+    font-size: 12px;
+    line-height: 20px;
+    margin-bottom: 16px;
+  }
+}
+
+/*# sourceMappingURL=ingredients.css.map */

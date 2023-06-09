@@ -1,0 +1,44 @@
+.header {
+  position: absolute;
+  width: 100%;
+  padding: 75px 0 31px;
+  z-index: 5;
+}
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__menu {
+  display: flex;
+  column-gap: 60px;
+}
+.header__list {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  color: #FFFFFF;
+  text-decoration: none;
+  list-style: none;
+  text-transform: uppercase;
+}
+.header__list-link {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+.header__list-link:hover {
+  color: red;
+  text-decoration: underline;
+}
+.header__title {
+  font-family: "LeMondeLivre", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 40px;
+  color: #FFFFFF;
+}
+
+/*# sourceMappingURL=header.css.map */

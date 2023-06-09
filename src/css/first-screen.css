@@ -1,0 +1,133 @@
+.first-screen {
+  padding: 312px 0 100px;
+  background: #996860;
+  position: relative;
+}
+.first-screen::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: url("../images/first-screen/first-screen.png") center/cover no-repeat;
+}
+.first-screen__box {
+  display: flex;
+  justify-content: end;
+}
+.first-screen__title {
+  font-family: "LiberationSerif", serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 73px;
+  line-height: 96px;
+  color: #FFFFFF;
+  margin-bottom: 34px;
+}
+.first-screen__title_active {
+  color: #000000;
+}
+.first-screen__subtitle {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 32px;
+  color: #FFFFFF;
+  margin-bottom: 46px;
+}
+.first-screen__btn {
+  width: 180px;
+  height: 52px;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 32px;
+  color: #000000;
+  background: transparent;
+  border: 1px solid #FFFFFF;
+  cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+  .first-screen__content {
+    padding-right: 0;
+  }
+}
+@media (max-width: 1024px) {
+  .first-screen__content {
+    margin-right: 30px;
+  }
+  .first-screen__title {
+    font-size: 56px;
+    line-height: 66px;
+    margin-bottom: 30px;
+  }
+  .first-screen__subtitle {
+    font-size: 13px;
+    line-height: 25px;
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 992px) {
+  .first-screen__content {
+    margin-right: 10px;
+  }
+}
+@media (max-width: 768px) {
+  .first-screen {
+    padding: 225px 0 80px;
+    position: relative;
+  }
+  .first-screen::before {
+    width: 100%;
+  }
+  .first-screen__box {
+    justify-content: center;
+  }
+  .first-screen__content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+  }
+  .first-screen__title {
+    font-size: 65px;
+    line-height: 70px;
+    margin-bottom: 20px;
+  }
+  .first-screen__btn {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 32px;
+    color: #000000;
+  }
+}
+@media (max-width: 576px) {
+  .first-screen {
+    padding: 175px 0 60px;
+  }
+  .first-screen__title {
+    font-size: 55px;
+    line-height: 50px;
+    margin-bottom: 15px;
+  }
+  .first-screen__subtitle {
+    font-size: 15px;
+    line-height: 25px;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 376px) {
+  .first-screen {
+    padding: 130px 0 40px;
+  }
+  .first-screen__title {
+    font-size: 45px;
+  }
+}
+
+/*# sourceMappingURL=first-screen.css.map */
